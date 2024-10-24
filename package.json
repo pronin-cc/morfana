@@ -5,7 +5,7 @@
   "name": "morfana",
   "version": "1.0.0",
   "description": "Morfana =======",
-  "main": "morfana.js",
+  "main": "src/morfana.mjs",
   "directories": {
     "test": "tests"
   },
