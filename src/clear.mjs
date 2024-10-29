@@ -2,17 +2,18 @@
  * [API] Remove all elements inserted by Morfana
  */
 
-export default function clear(selector, config, development) {
-  // let obj = (!selector) ? document : document.querySelectorAll(selector);
+export default function clear(selector, development) {
   let obj = (!selector) ? document : selector;
 
-  if (development.colorize) {
-    obj.querySelectorAll(".morfana-development-colorize").forEach((el) => el.remove()); // remove color label under letters
-  }
-  // obj.removeData('morfana-markup');
-  obj.removeAttribute('data-morfana-markup');
-  // obj.removeData('morfana-data-metrics');
-  obj.removeAttribute('morfana-data-metrics');
+  // if (development.colorize) {
+  //   obj.querySelectorAll(".morfana-development-colorize").forEach((el) => el.remove()); // remove color label under letters
+  // }
+
+  console.log(obj);
+
+  delete obj.dataset.morfanaMarkup;
+  delete obj.dataset.morfanaDataMetrics;
+
   obj.querySelectorAll(".morfana-graphics").forEach((el) => el.remove()); // remove SVG
 
   obj.querySelectorAll(".morfana-paddings").forEach((el) => {

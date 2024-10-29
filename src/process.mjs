@@ -11,11 +11,12 @@ import createImages from "./create-images.mjs";
 export default function process(data, config, development) {
 
   // remove previous elements if exist
-  clear(data.obj, config, development);
+  clear(data.obj, development);
 
   // get height of the whole word
   // use calculateMetrics() with justHeightReturnWordHeight set to true
   calculateMetrics(data, true, development);
+
   // set letter-spacing:0 for letters which followed by stress mark
   wrapBeforeStressMarks(data, config, development);
   

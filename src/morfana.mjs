@@ -18,8 +18,8 @@ import convertMarkup from './convert-markup.mjs';
 
 const development = {
   colorize: false,
-  log: true,
-  showTmpDiv: true,
+  log: false,
+  showTmpDiv: false,
 };
 
 const config = {
