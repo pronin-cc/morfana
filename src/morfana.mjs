@@ -26,7 +26,7 @@ const config = {
   autoStart: true, // start Morfana after DOM is ready
   freezeWord: false, // add vertical padding to word's span or "freeze" word in its inital place
   strokeWidth: 1.5, // px
-  stroke: 'rgb(150,150,150)',
+  stroke: 'rgb(50,50,50)',
   disablePointerEvents: true, // add 'pointer-events: none' to each svg
   zeroEndingWidthFactor: 0.7, // now: width of "zero-ending" = data.height * zeroEndingWidthFactor
   paddingFactor: 0.2, // now: width of padding for "ending" = data.height * paddingFactor

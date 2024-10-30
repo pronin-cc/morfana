@@ -4,7 +4,7 @@ import preprocess from './preprocess.mjs';
  * Process queue of elements. This function called with setTimeout() to prevent GUI freezing.
  */
 function doQueue(queue, onQueueEmptyCallback, config, development) {
-  console.log('queue:', queue);
+  // console.log('queue:', queue);
   let qty = queue.length;
 
   if (qty > 0) {// are there any elements in queue?

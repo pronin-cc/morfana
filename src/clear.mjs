@@ -9,7 +9,7 @@ export default function clear(selector, development) {
   //   obj.querySelectorAll(".morfana-development-colorize").forEach((el) => el.remove()); // remove color label under letters
   // }
 
-  console.log(obj);
+  // console.log(obj);
 
   delete obj.dataset.morfanaMarkup;
   delete obj.dataset.morfanaDataMetrics;

@@ -28,7 +28,7 @@ export default function process(data, config, development) {
 
   // save metrics to word, for getLettersBounds() API
   data.obj.dataset.morfanaDataMetrics = data.metrics;
-  console.log('data metrics:', data.metrics)
+  // console.log('data metrics:', data.metrics)
   if (development.colorize) {
     for (let i = 0, qty = data.metrics.length; i < qty; i++) {
       let color = 'red';
